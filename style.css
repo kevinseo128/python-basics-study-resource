@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  /* using Inter as the main font for the website */
+  background-color: #F5F7FA;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Main page heading */
+h1 {
+  color: #0D1B2A;
+  font-size: 36px;
+}
+
+/* Section heading */
+h2 {
+  color: #0D1B2A;
+  font-size: 24px;
+}
+
+/* Small heading */
+h3 {
+  color: #0D1B2A;
+  font-size: 18px;
+}
+
+/* Header */
+.header {
+  background-color: #0D1B2A;
+  display: flex;
+  /* using flexbox to place the logo and navigation in one row*/
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+}
+
+.logo {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+/* Contents */
+.contents {
+  width: 80%;
+  max-width: 1000px;
+  /* stopping the content from getting too wide */
+  margin: 50px auto;
+}
+
+/* Footer */
+.footer {
+  background-color: #0D1B2A;
+  color: #FFFFFF;
+  padding: 20px 8%;
+  margin-top: 30px;
+}
+
+.footer a {
+  color: #FFFFFF;
+}
+
+/* Home Page - Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 10%;
+  min-height: 260px;
+}
+
+.hero-text {
+  width: 50%;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  /* styling the class button on hero*/
+  display: inline-block;
+  /* making the link work more like a button */
+  background-color: #2563EB;
+  color: #FFFFFF;
+  padding: 14px 25px;
+  border-radius: 8px;
+  /*making button round*/
+  font-weight: 600;
+}
+
+.hero-image {
+  width: 40%;
+  height: 220px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Home Page - Learning Topic Cards */
+.topics {
+  padding: 20px 0 50px;
+}
+
+.topic-grid {
+  display: grid;
+  /* using grid to place the topic cards */
+  grid-template-columns: repeat(4, 1fr);
+  /* making 4 equal columns */
+  gap: 20px;
+}
+
+.topic-item {
+  background-color: #FFFFFF;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.topic-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #F5F7FA;
+  border: 1px solid #D6E4FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.topic-btn {
+  color: #2563EB;
+  font-weight: 600;
+}
+
+/* Home Page - Intro */
+.python-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.intro-text {
+  width: 55%;
+}
+
+.intro-image {
+  width: 35%;
+  height: 200px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Learning Content Page */
+.lesson {
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.code-box {
+  background-color: #0D1B2A;
+  color: #FFFFFF;
+  padding: 15px;
+}
+
+.output-box {
+  background-color: #FFFFFF;
+  padding: 15px;
+  border: 1px solid #DDDDDD;
+}
+
+.tip {
+  background-color: #FFF4CC;
+  color: #333333;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.page-btn {
+  background-color: #2563EB;
+  color: #FFFFFF;
+  padding: 10px 15px;
+}
+
+/* Quiz Page*/
+.question {
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.question label {
+  display: block;
+  padding: 8px 0;
+}
+
+.check-btn {
+  background-color: #2563EB;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  font-family: inherit;
+}
+
+.result {
+  background-color: #FFF4CC;
+  padding: 15px;
+  margin-top: 20px;
+}

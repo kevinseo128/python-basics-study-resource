@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - Python Basics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header">
+
+    <a href="index.html" class="logo">
+      <span>LOGO</span>
+      <span>PYTHON BASICS</span>
+    </a>
+
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="start.html">Getting Started</a>
+      <a href="ifelse.html">If/Else</a>
+      <a href="loops.html">Loops</a>
+      <a href="quiz.html">Quiz</a>
+    </div>
+
+  </div>
+
+
+  <!-- Quiz -->
+  <div class="contents">
+
+    <h1>Python Basics Quiz</h1>
+    <p>Test what you have learned about Python basics.</p>
+
+
+    <!-- Question 1 -->
+    <div class="question">
+
+      <h2>Question 1</h2>
+
+      <p>What is a variable used for?</p>
+
+      <!-- https://www.w3schools.com/tags/att_input_type_radio.asp -->
+      <label> <!-- using label to connect the answer text with the radio button -->
+        <input type="radio" name="q1" value="a"> <!-- ***using radio buttons so the user can choose one answer -->
+        To repeat code
+      </label>
+
+      <label>
+        <input type="radio" name="q1" value="b">
+        To store a value
+      </label>
+
+      <label>
+        <input type="radio" name="q1" value="c">
+        To check a condition
+      </label>
+
+      <label>
+        <input type="radio" name="q1" value="d">
+        To stop the program
+      </label>
+
+    </div>
+
+
+    <!-- Question 2 -->
+    <div class="question">
+
+      <h2>Question 2</h2>
+
+      <p>Which code lets the user enter a number?</p>
+
+      <label>
+        <input type="radio" name="q2" value="a">
+        num = int(input("Enter a number: "))
+      </label>
+
+      <label>
+        <input type="radio" name="q2" value="b">
+        print("Enter a number")
+      </label>
+
+      <label>
+        <input type="radio" name="q2" value="c">
+        num = "Enter a number"
+      </label>
+
+      <label>
+        <input type="radio" name="q2" value="d">
+        input = num
+      </label>
+
+    </div>
+
+
+    <!-- Question 3 -->
+    <div class="question">
+
+      <h2>Question 3</h2>
+
+      <p>What will this code print?</p>
+
+      <div class="code-box">
+        <!-- ***using the code tag to display programming code -->
+        <code>
+          x = 25<br>
+          if x &lt; 20:<br>
+          &nbsp;&nbsp;print("small")<br>
+          else:<br>
+          &nbsp;&nbsp;print("large")
+        </code>
+      </div>
+
+      <label>
+        <input type="radio" name="q3" value="a">
+        small
+      </label>
+
+      <label>
+        <input type="radio" name="q3" value="b">
+        large
+      </label>
+
+      <label>
+        <input type="radio" name="q3" value="c">
+        25
+      </label>
+
+      <label>
+        <input type="radio" name="q3" value="d">
+        Nothing
+      </label>
+
+    </div>
+
+
+    <!-- Question 4 -->
+    <div class="question">
+
+      <h2>Question 4</h2>
+
+      <p>When do we use elif?</p>
+      <!-- *** using the same name so only one answer can be selected -->
+      <label>
+        <input type="radio" name="q4" value="a">
+        To repeat code
+      </label>
+
+      <label>
+        <input type="radio" name="q4" value="b">
+        To check another condition
+      </label>
+
+      <label>
+        <input type="radio" name="q4" value="c">
+        To store a value
+      </label>
+
+      <label>
+        <input type="radio" name="q4" value="d">
+        To print text
+      </label>
+
+    </div>
+
+
+    <!-- Question 5 -->
+    <div class="question">
+
+      <h2>Question 5</h2>
+
+      <p>What numbers will this loop print?</p>
+
+      <div class="code-box">
+        <code>
+          for i in range(4):<br>
+          &nbsp;&nbsp;print(i)
+        </code>
+      </div>
+
+      <label>
+        <input type="radio" name="q5" value="a">
+        1, 2, 3, 4
+      </label>
+
+      <label>
+        <input type="radio" name="q5" value="b">
+        0, 1, 2, 3
+      </label>
+
+      <label>
+        <input type="radio" name="q5" value="c">
+        0, 1, 2, 3, 4
+      </label>
+
+      <label>
+        <input type="radio" name="q5" value="d">
+        4
+      </label>
+
+    </div>
+
+
+    <!-- Question 6 -->
+    <div class="question">
+
+      <h2>Question 6</h2>
+
+      <p>How many times will this while loop run?</p>
+
+      <div class="code-box">
+        <code>
+          number = 1<br><br>
+          while number &lt;= 3:<br>
+          &nbsp;&nbsp;print(number)<br>
+          &nbsp;&nbsp;number = number + 1
+        </code>
+      </div>
+
+      <label>
+        <input type="radio" name="q6" value="a">
+        2 times
+      </label>
+
+      <label>
+        <input type="radio" name="q6" value="b">
+        3 times
+      </label>
+
+      <label>
+        <input type="radio" name="q6" value="c">
+        4 times
+      </label>
+
+      <label>
+        <input type="radio" name="q6" value="d">
+        It never stops
+      </label>
+
+    </div>
+
+
+    <!-- using a button so the user can check their answers -->
+    <!-- using id so JavaScript can find the button -->
+    <button type="button" class="check-btn" id="checkAnswers">Check Answers</button>
+
+    <!-- Results -->
+    <div class="result" id="result">
+      Your result will appear here.
+    </div>
+
+  </div>
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <p><strong>PYTHON BASICS</strong></p>
+    <p><strong>by: Kevin Seo</strong></p>
+
+    <p><strong>Citations / Licences:</strong></p>
+
+    <p>
+      Title: Interactive Quiz<br>
+      Website: CodeActually<br>
+      Used for: Learning how to make a quiz with HTML and JavaScript<br>
+      Link: https://codeactually.com/interactivequiz.html
+    </p>
+
+    <p>
+      Title: HTML Input Type Radio<br>
+      Website: W3Schools<br>
+      Used for: Learning how to use radio buttons<br>
+      Link: https://www.w3schools.com/tags/att_input_type_radio.asp
+    </p>
+
+    <p>
+      Title: JavaScript getElementById()<br>
+      Website: W3Schools<br>
+      Used for: Learning how JavaScript finds an HTML element by its id<br>
+      Link: https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+    </p>
+
+    <p>
+      Original content on this website is licensed under
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/">
+        CC BY-NC 4.0
+      </a>.
+    </p>
+  </div>
+
+  <!-- using script to add JavaScript to the quiz -->
+  <script>
+
+    // used this page to help make the quiz
+    // https://codeactually.com/interactivequiz.html
+
+    // getting the button and result area
+    // https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+    const checkButton = document.getElementById("checkAnswers");
+    const result = document.getElementById("result");
+
+    // checking the answers when the button is clicked
+    // https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+    checkButton.addEventListener("click", function () {
+      // using let because the score will change
+
+      let score = 0;
+
+      // finding the selected radio button for each question
+      // https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
+      const q1 = document.querySelector('input[name="q1"]:checked');
+      const q2 = document.querySelector('input[name="q2"]:checked');
+      const q3 = document.querySelector('input[name="q3"]:checked');
+      const q4 = document.querySelector('input[name="q4"]:checked');
+      const q5 = document.querySelector('input[name="q5"]:checked');
+      const q6 = document.querySelector('input[name="q6"]:checked');
+
+      // checking that an answer was selected and that it is correct
+
+      if (q1 && q1.value == "b") {
+        score++;  // adding 1 to the score for a correct answer
+      }
+
+      if (q2 && q2.value == "a") {
+        score++;
+      }
+
+      if (q3 && q3.value == "b") {
+        score++;
+      }
+
+      if (q4 && q4.value == "b") {
+        score++;
+      }
+
+      if (q5 && q5.value == "b") {
+        score++;
+      }
+
+      if (q6 && q6.value == "b") {
+        score++;
+      }
+
+      // changing the result text to show the score
+      // https://www.w3schools.com/jsref/prop_node_textcontent.asp
+      result.textContent = "You got " + score + " out of 6.";
+
+    });
+
+  </script>
+</body>
+
+</html>

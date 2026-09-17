@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PYTHON BASICS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+
+  <!-- Header -->
+  <div class="header">
+
+    <a href="index.html" class="logo">
+      <span>LOGO</span>
+      <span>PYTHON BASICS</span>
+    </a>
+
+    <div class="nav">
+      <a href="index.html">Home</a>
+      <a href="start.html">Getting Started</a>
+      <a href="ifelse.html">If/Else</a>
+      <a href="loops.html">Loops</a>
+      <a href="quiz.html">Quiz</a>
+    </div>
+
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Learn Python Step by Step</h1>
+      <p>Simple Python lessons for beginners.</p>
+      <a href="start.html" class="hero-btn">Start Learning</a>
+    </div>
+
+    <div class="hero-image">
+      <span>IMAGE</span>
+    </div>
+  </div>
+
+
+  <!-- Contents -->
+  <div class="contents">
+
+    <!-- Learning Topic Cards -->
+    <div class="topics">
+      <h1>What You Will Learn</h1>
+
+      <div class="topic-grid">
+        <!-- Getting Started -->
+        <div class="topic-item">
+          <div class="topic-icon">>_</div>
+          <div class="topic-content">
+            <h2>Getting Started</h2>
+            <p>Print, Variables and Input</p>
+            <a href="start.html" class="topic-btn" id="startTopic">Start →</a>
+          </div>
+        </div>
+
+        <!-- If / Else -->
+        <div class="topic-item">
+          <div class="topic-icon">if</div>
+          <div class="topic-content">
+            <h2>If / Else</h2>
+            <p>If, Elif and Else</p>
+            <a href="ifelse.html" class="topic-btn" id="ifelseTopic">Start →</a>
+          </div>
+        </div>
+
+        <!-- Loops -->
+        <div class="topic-item">
+          <div class="topic-icon">↻</div>
+          <div class="topic-content">
+            <h2>Loops</h2>
+            <p>For and While</p>
+            <a href="loops.html" class="topic-btn" id="loopsTopic">Start →</a>
+          </div>
+        </div>
+
+        <!-- Quiz -->
+        <div class="topic-item">
+          <div class="topic-icon">?</div>
+          <div class="topic-content">
+            <h2>Quiz</h2>
+            <p>Test what you have learned</p>
+            <a href="quiz.html" class="topic-btn">Start →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- Python Introduction -->
+    <div class="python-intro">
+
+      <div class="intro-text">
+        <h1>What is Python?</h1>
+        <p>
+          Python is a programming language that is easy for beginners to learn. This website will help you learn some
+          basic Python skills step by step.
+        </p>
+        <p>
+          This website is for students aged 13-18 who are new to Python.
+          Start with Getting Started, then learn If/Else and Loops, and try the Quiz at the end.
+        </p>
+      </div>
+
+      <div class="intro-image">
+        <span>IMAGE</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p><strong>PYTHON BASICS</strong></p>
+    <p><strong>by: Kevin Seo</strong></p>
+
+    <p><strong>Citations / Licences:</strong></p>
+
+    <p>
+      Title: Cookies vs Local Storage vs Session Storage<br>
+      Channel: Web Dev Simplified<br>
+      Used for: Comparing cookies and localStorage<br>
+      Link: https://www.youtube.com/watch?v=GihQAC1I39Q
+    </p>
+
+    <p>
+      Title: JavaScript Cookies<br>
+      Website: W3Schools<br>
+      Used for: Learning how cookies store information<br>
+      Link: https://www.w3schools.com/js/js_cookies.asp
+    </p>
+
+    <p>
+      Title: Window localStorage<br>
+      Website: W3Schools<br>
+      Used for: Learning how to save the completed topics<br>
+      Link: https://www.w3schools.com/jsref/prop_win_localstorage.asp
+    </p>
+
+    <p>
+      Title: JavaScript getElementById()<br>
+      Website: W3Schools<br>
+      Used for: Finding an HTML element by its id<br>
+      Link: https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+    </p>
+
+    <p>
+      Title: addEventListener()<br>
+      Website: MDN Web Docs<br>
+      Used for: Running code when a topic link is clicked<br>
+      Link: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+    </p>
+
+    <p>
+      Title: textContent<br>
+      Website: W3Schools<br>
+      Used for: Changing Start to Completed on the topic cards<br>
+      Link: https://www.w3schools.com/jsref/prop_node_textcontent.asp
+    </p>
+
+    <p>
+      Title: Inter<br>
+      Website: Google Fonts<br>
+      Used for: The main font on the website<br>
+      Link: https://fonts.google.com/specimen/Inter
+    </p>
+
+    <p>
+      Original content on this website is licensed under
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/">
+        CC BY-NC 4.0
+      </a>.
+    </p>
+  </div>
+
+
+  <!-- using script to add JavaScript to the topic cards -->
+  <script>
+
+    // getting the lesson links by their id
+    // https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+    const startTopic = document.getElementById("startTopic");
+    const ifelseTopic = document.getElementById("ifelseTopic");
+    const loopsTopic = document.getElementById("loopsTopic");
+
+
+    // using localStorage to remember which lessons were completed
+    // https://www.w3schools.com/jsref/prop_win_localstorage.asp
+
+    // saving the lesson as completed when the link is clicked
+    // https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+    startTopic.addEventListener("click", function () {
+      localStorage.setItem("startCompleted", "yes");
+    });
+
+    ifelseTopic.addEventListener("click", function () {
+      localStorage.setItem("ifelseCompleted", "yes");
+    });
+
+    loopsTopic.addEventListener("click", function () {
+      localStorage.setItem("loopsCompleted", "yes");
+    });
+
+
+    // checking if each lesson was completed before
+    // changing Start to Completed
+    // https://www.w3schools.com/jsref/prop_node_textcontent.asp
+    if (localStorage.getItem("startCompleted") == "yes") {
+      startTopic.textContent = "Completed ✓";
+    }
+
+    if (localStorage.getItem("ifelseCompleted") == "yes") {
+      ifelseTopic.textContent = "Completed ✓";
+    }
+
+    if (localStorage.getItem("loopsCompleted") == "yes") {
+      loopsTopic.textContent = "Completed ✓";
+    }
+
+  </script>
+
+</body>
+
+</html>
