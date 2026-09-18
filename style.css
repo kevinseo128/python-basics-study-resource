@@ -55,6 +55,10 @@ h3 {
   vertical-align: middle;
 }
 
+.logo-basics-word {
+  color: #FACC15;
+}
+
 .nav {
   display: flex;
   gap: 25px;
@@ -70,7 +74,7 @@ h3 {
   width: 80%;
   max-width: 1000px;
   /* stopping the content from getting too wide */
-  margin: 50px auto;
+  margin: 20px auto;
 }
 
 /* Footer */
@@ -90,15 +94,23 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 5px;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 50px 20px;
-  min-height: 240px;
+  padding: 15px 20px 0;
+  min-height: 0;
 }
 
 .hero-text {
-  width: 45%;
+  width: 48%;
+}
+
+.hero-python-word {
+  color: #0459fb;
+}
+
+.hero h1 {
+  font-size: 44px;
 }
 
 .hero p {
@@ -120,9 +132,6 @@ h3 {
 
 .hero-image {
   width: 45%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .hero-image img {
@@ -134,7 +143,7 @@ h3 {
 
 /* Home Page - Learning Topic Cards */
 .topics {
-  padding: 20px 0 50px;
+  padding: 20px 0 30px;
 }
 
 .topic-grid {
@@ -149,18 +158,21 @@ h3 {
   background-color: #FFFFFF;
   padding: 25px;
   border-radius: 10px;
+  border: 1px solid #B8CDF5;
 }
 
 .topic-icon {
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  background-color: #F5F7FA;
-  border: 1px solid #D6E4FF;
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin-bottom: 15px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.topic-icon img {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+  display: block;
 }
 
 .topic-btn {
@@ -173,7 +185,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 0;
+  padding: 20px 0;
 }
 
 .intro-text {
