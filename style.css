@@ -37,13 +37,22 @@ h3 {
   /* using flexbox to place the logo and navigation in one row*/
   justify-content: space-between;
   align-items: center;
-  padding: 20px 8%;
+  padding: 10px 8%;
 }
 
 .logo {
   color: #FFFFFF;
   font-size: 24px;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  height: auto;
+  vertical-align: middle;
 }
 
 .nav {
@@ -79,19 +88,22 @@ h3 {
 /* Home Page - Hero */
 .hero {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 50px 10%;
-  min-height: 260px;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  min-height: 240px;
 }
 
 .hero-text {
-  width: 50%;
+  width: 45%;
 }
 
 .hero p {
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 
 .hero-btn {
@@ -107,12 +119,17 @@ h3 {
 }
 
 .hero-image {
-  width: 40%;
-  height: 220px;
-  background-color: #FFFFFF;
+  width: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
 }
 
 /* Home Page - Learning Topic Cards */
@@ -172,6 +189,12 @@ h3 {
   align-items: center;
 }
 
+.intro-image img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+}
 
 /* Learning Content Page */
 .lesson {
