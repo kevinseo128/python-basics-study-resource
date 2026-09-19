@@ -2,14 +2,13 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', Arial, sans-serif;
-  /* using Inter as the main font for the website */
+  font-family: 'Inter', Arial, sans-serif;  /* using Inter as the main font for the website */
   background-color: #F5F7FA;
   color: #333333;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none; /*removing the line thing under the words*/
 }
 
 /* Main page heading */
@@ -33,10 +32,9 @@ h3 {
 /* Header */
 .header {
   background-color: #0D1B2A;
-  display: flex;
-  /* using flexbox to place the logo and navigation in one row*/
-  justify-content: space-between;
-  align-items: center;
+  display: flex; /* using flexbox to place the logo and navigation in one row*/
+  justify-content: space-between; /* putting the logo on the left and navigation links on the right */
+  align-items: center; /* aligning the logo and navigation vertically in the middle */
   padding: 10px 8%;
 }
 
@@ -44,15 +42,15 @@ h3 {
   color: #FFFFFF;
   font-size: 24px;
   font-weight: 700;
-  display: flex;
-  align-items: center;
+  display: flex; /* keeping the logo image and text together in one row */
+  align-items: center; /* adding space between the logo image and website name */
   gap: 10px;
 }
 
 .logo img {
   width: 40px;
   height: auto;
-  vertical-align: middle;
+  vertical-align: middle; /* aligning the logo image with the text vertically */
 }
 
 .logo-basics-word {
@@ -60,8 +58,8 @@ h3 {
 }
 
 .nav {
-  display: flex;
-  gap: 25px;
+  display: flex; /* arranging navigation links horizontally */
+  gap: 25px; /* adding equal spacing between navigation links */
 }
 
 .nav a {
@@ -72,9 +70,8 @@ h3 {
 /* Contents */
 .contents {
   width: 80%;
-  max-width: 1000px;
-  /* stopping the content from getting too wide */
-  margin: 20px auto;
+  max-width: 1000px; /* stopping content from becoming too wide on large screens */
+  margin: 20px auto; /* centering the content area */
 }
 
 /* Footer */
@@ -91,9 +88,9 @@ h3 {
 
 /* Home Page - Hero */
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; /* placing hero text and image next to each other */
+  justify-content: center;  /* moving the hero content to the centre */
+  align-items: center; /* aligning text and image vertically */
   gap: 5px;
   max-width: 1200px;
   margin: 0 auto;
@@ -120,13 +117,11 @@ h3 {
 
 .hero-btn {
   /* styling the class button on hero*/
-  display: inline-block;
-  /* making the link work more like a button */
+  display: inline-block; /* making the link behave like a button */
   background-color: #2563EB;
   color: #FFFFFF;
   padding: 14px 25px;
-  border-radius: 8px;
-  /*making button round*/
+  border-radius: 8px; /* making the button corners rounded */
   font-weight: 600;
 }
 
@@ -147,11 +142,9 @@ h3 {
 }
 
 .topic-grid {
-  display: grid;
-  /* using grid to place the topic cards */
-  grid-template-columns: repeat(4, 1fr);
-  /* making 4 equal columns */
-  gap: 20px;
+  display: grid;  /* using grid to place the topic cards */
+  grid-template-columns: repeat(4, 1fr);  /* making 4 equal columns */
+  gap: 20px; /* adding space between each learning card */
 }
 
 .topic-item {
@@ -171,7 +164,7 @@ h3 {
 .topic-icon img {
   width: 68px;
   height: 68px;
-  object-fit: contain;
+  object-fit: contain; /* keeping the icon shape without stretching it */
   display: block;
 }
 
@@ -236,7 +229,7 @@ h3 {
 
 .page-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* placing previous and next buttons at opposite sides */
   margin-top: 30px;
 }
 
