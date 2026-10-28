@@ -9,7 +9,6 @@
 </head>
 
 <body id="top">
-
   <!-- Header -->
   <div class="header">
     <a href="index.html" class="logo">
@@ -19,13 +18,12 @@
     </a>
 
     <div class="nav">
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="start.html">Getting Started</a>
       <a href="ifelse.html">If/Else</a>
       <a href="loops.html">Loops</a>
       <a href="quiz.html">Quiz</a>
     </div>
-
   </div>
 
   <!-- Hero -->
@@ -37,10 +35,9 @@
     </div>
 
     <div class="hero-image">
-      <img src="images/main-hero.png" alt="Python coding image">
+      <img src="images/main-hero-new.png" alt="Python coding image">
     </div>
   </div>
-
 
   <!-- Contents -->
   <div class="contents">
@@ -89,10 +86,8 @@
             <a href="quiz.html" class="topic-btn">Start →</a>
           </div>
         </div>
-
       </div>
     </div>
-
 
     <!-- Python Introduction -->
     <div class="python-intro">
@@ -100,9 +95,9 @@
       <div class="intro-text">
         <h1>What is <span class="hero-python-word">Python</span>?</h1>
         <p><strong>
-          Python is a programming language that is easy for beginners to learn. This website will help you learn some
-          basic Python skills step by step.
-        </strong></p>
+            Python is a programming language that is easy for beginners to learn. This website will help you learn some
+            basic Python skills step by step.
+          </strong></p>
         <p>
           This website is for students aged 13-18 who are new to Python.<br>
           Start with Getting Started, then learn If/Else and Loops, and try the Quiz at the end.
@@ -119,7 +114,6 @@
   <div class="footer">
     <p><strong>PYTHON BASICS</strong></p>
     <p><strong>by: Kevin Seo</strong></p>
-
     <p><strong>Citations / Licences:</strong></p>
 
     <p>
@@ -139,21 +133,21 @@
     <p>
       Title: Window localStorage<br>
       Website: W3Schools<br>
-      Used for: Learning how to save the completed topics<br>
+      Used for: Saving and restoring completed lesson status<br>
       Link: https://www.w3schools.com/jsref/prop_win_localstorage.asp
     </p>
 
     <p>
       Title: JavaScript getElementById()<br>
       Website: W3Schools<br>
-      Used for: Finding an HTML element by its id<br>
+      Used for: Finding HTML elements by their id<br>
       Link: https://www.w3schools.com/jsref/met_document_getelementbyid.asp
     </p>
 
     <p>
       Title: addEventListener()<br>
       Website: MDN Web Docs<br>
-      Used for: Running code when a topic link is clicked<br>
+      Used for: Running JavaScript when buttons are clicked<br>
       Link: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
     </p>
 
@@ -168,13 +162,16 @@
       Title: Inter<br>
       Website: Google Fonts<br>
       Used for: The main font on the website<br>
+      Licence: SIL Open Font License 1.1<br>
       Link: https://fonts.google.com/specimen/Inter
     </p>
 
     <p>
+      <strong>Image 1</strong><br>
       Title: Python Logo<br>
       Organisation: Python Software Foundation<br>
-      Used for: The Python logo in the website header<br>
+      Used for: Header logo<br>
+      Usage Rights: Python Software Foundation Trademark Usage Policy<br>
       Link: https://www.python.org/community/logos/
     </p>
 
@@ -186,52 +183,8 @@
     </p>
   </div>
 
-
-  <!-- using script to add JavaScript to the topic cards -->
-  <script>
-
-    // getting the lesson links by their id
-    // https://www.w3schools.com/jsref/met_document_getelementbyid.asp
-    const startTopic = document.getElementById("startTopic");
-    const ifelseTopic = document.getElementById("ifelseTopic");
-    const loopsTopic = document.getElementById("loopsTopic");
-
-
-    // using localStorage to remember which lessons were completed
-    // https://www.w3schools.com/jsref/prop_win_localstorage.asp
-
-    // saving the lesson as completed when the link is clicked
-    // https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
-    startTopic.addEventListener("click", function () {
-      localStorage.setItem("startCompleted", "yes");
-    });
-
-    ifelseTopic.addEventListener("click", function () {
-      localStorage.setItem("ifelseCompleted", "yes");
-    });
-
-    loopsTopic.addEventListener("click", function () {
-      localStorage.setItem("loopsCompleted", "yes");
-    });
-
-
-    // checking if each lesson was completed before
-    // changing Start to Completed
-    // https://www.w3schools.com/jsref/prop_node_textcontent.asp
-    if (localStorage.getItem("startCompleted") == "yes") {
-      startTopic.textContent = "Completed ✓";
-    }
-
-    if (localStorage.getItem("ifelseCompleted") == "yes") {
-      ifelseTopic.textContent = "Completed ✓";
-    }
-
-    if (localStorage.getItem("loopsCompleted") == "yes") {
-      loopsTopic.textContent = "Completed ✓";
-    }
-
-  </script>
-
+  <!-- linking the shared JavaScript file -->
+  <script src="main.js"></script>
 </body>
 
 </html>

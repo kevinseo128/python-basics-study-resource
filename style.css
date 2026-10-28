@@ -2,13 +2,15 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', Arial, sans-serif;  /* using Inter as the main font for the website */
+  font-family: 'Inter', Arial, sans-serif;
+  /* using Inter as the main font for the website */
   background-color: #F5F7FA;
   color: #333333;
 }
 
 a {
-  text-decoration: none; /*removing the line thing under the words*/
+  text-decoration: none;
+  /*removing the line thing under the words*/
 }
 
 /* Main page heading */
@@ -32,9 +34,12 @@ h3 {
 /* Header */
 .header {
   background-color: #0D1B2A;
-  display: flex; /* using flexbox to place the logo and navigation in one row*/
-  justify-content: space-between; /* putting the logo on the left and navigation links on the right */
-  align-items: center; /* aligning the logo and navigation vertically in the middle */
+  display: flex;
+  /* using flexbox to place the logo and navigation in one row*/
+  justify-content: space-between;
+  /* putting the logo on the left and navigation links on the right */
+  align-items: center;
+  /* aligning the logo and navigation vertically in the middle */
   padding: 10px 8%;
 }
 
@@ -42,15 +47,18 @@ h3 {
   color: #FFFFFF;
   font-size: 24px;
   font-weight: 700;
-  display: flex; /* keeping the logo image and text together in one row */
-  align-items: center; /* adding space between the logo image and website name */
+  display: flex;
+  /* keeping the logo image and text together in one row */
+  align-items: center;
+  /* adding space between the logo image and website name */
   gap: 10px;
 }
 
 .logo img {
   width: 40px;
   height: auto;
-  vertical-align: middle; /* aligning the logo image with the text vertically */
+  vertical-align: middle;
+  /* aligning the logo image with the text vertically */
 }
 
 .logo-basics-word {
@@ -58,20 +66,45 @@ h3 {
 }
 
 .nav {
-  display: flex; /* arranging navigation links horizontally */
-  gap: 25px; /* adding equal spacing between navigation links */
+  display: flex;
+  /* arranging navigation links horizontally */
+  gap: 25px;
+  /* adding equal spacing between navigation links */
 }
 
 .nav a {
   color: #FFFFFF;
   font-weight: 600;
+
+  /* Keep the same space around every navigation link */
+  padding: 4px 8px;
+}
+
+/* Show which page is currently open */
+.nav a.active {
+  /* Add an underline to the active link */
+  text-decoration: underline;
+  /* Make the underline yellow */
+  text-decoration-color: #FACC15;
+  /* Make the underline a little thicker */
+  text-decoration-thickness: 3px;
+  /* Add space between the text and underline */
+  text-underline-offset: 15px;
+}
+
+/* Change the navigation link colour when the mouse is over it */
+.nav a:hover {
+  color: #FACC15;
+  /* changing the link text to yellow */
 }
 
 /* Contents */
 .contents {
   width: 80%;
-  max-width: 1000px; /* stopping content from becoming too wide on large screens */
-  margin: 20px auto; /* centering the content area */
+  max-width: 1000px;
+  /* stopping content from becoming too wide on large screens */
+  margin: 20px auto;
+  /* centering the content area */
 }
 
 /* Footer */
@@ -88,9 +121,12 @@ h3 {
 
 /* Home Page - Hero */
 .hero {
-  display: flex; /* placing hero text and image next to each other */
-  justify-content: center;  /* moving the hero content to the centre */
-  align-items: center; /* aligning text and image vertically */
+  display: flex;
+  /* placing hero text and image next to each other */
+  justify-content: center;
+  /* moving the hero content to the centre */
+  align-items: center;
+  /* aligning text and image vertically */
   gap: 5px;
   max-width: 1200px;
   margin: 0 auto;
@@ -117,11 +153,13 @@ h3 {
 
 .hero-btn {
   /* styling the class button on hero*/
-  display: inline-block; /* making the link behave like a button */
+  display: inline-block;
+  /* making the link behave like a button */
   background-color: #2563EB;
   color: #FFFFFF;
   padding: 14px 25px;
-  border-radius: 8px; /* making the button corners rounded */
+  border-radius: 8px;
+  /* making the button corners rounded */
   font-weight: 600;
 }
 
@@ -142,9 +180,12 @@ h3 {
 }
 
 .topic-grid {
-  display: grid;  /* using grid to place the topic cards */
-  grid-template-columns: repeat(4, 1fr);  /* making 4 equal columns */
-  gap: 20px; /* adding space between each learning card */
+  display: grid;
+  /* using grid to place the topic cards */
+  grid-template-columns: repeat(4, 1fr);
+  /* making 4 equal columns */
+  gap: 20px;
+  /* adding space between each learning card */
 }
 
 .topic-item {
@@ -164,13 +205,33 @@ h3 {
 .topic-icon img {
   width: 68px;
   height: 68px;
-  object-fit: contain; /* keeping the icon shape without stretching it */
+  object-fit: contain;
+  /* keeping the icon shape without stretching it */
   display: block;
 }
 
 .topic-btn {
   color: #2563EB;
   font-weight: 600;
+  margin-top: auto;
+  /* pushing the Start link to the bottom */
+}
+
+/* Keep the Start links at the same height */
+.topic-item {
+  display: flex;
+  /* making the card use a flexible layout */
+  flex-direction: column;
+  /* arranging the card content from top to bottom */
+}
+
+.topic-content {
+  display: flex;
+  /* making the text area flexible */
+  flex-direction: column;
+  /* arranging the text from top to bottom */
+  flex: 1;
+  /* making each content area use the remaining card space */
 }
 
 /* Home Page - Intro */
@@ -229,7 +290,8 @@ h3 {
 
 .page-navigation {
   display: flex;
-  justify-content: space-between; /* placing previous and next buttons at opposite sides */
+  justify-content: space-between;
+  /* placing previous and next buttons at opposite sides */
   margin-top: 30px;
 }
 
@@ -238,6 +300,34 @@ h3 {
   color: #FFFFFF;
   padding: 10px 15px;
 }
+
+
+/* Lesson complete area */
+.complete-area {
+  text-align: center;
+  /* putting the text and button in the centre */
+  margin: 30px 0 20px;
+}
+
+/* Mark as Complete button */
+.complete-btn {
+  background-color: #2563EB;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  /* showing a hand cursor when the mouse is over the button */
+}
+
+/* Completed lesson button */
+.complete-btn.completed {
+  background-color: #16A34A;
+  /* changing the button to green when the lesson is completed */
+}
+
 
 /* Quiz Page*/
 .question {
@@ -263,4 +353,39 @@ h3 {
   background-color: #FFF4CC;
   padding: 15px;
   margin-top: 20px;
+}
+
+/* Quiz feedback */
+.feedback {
+  display: inline-block;
+  /* keeping the feedback background around the text */
+  font-weight: 600;
+  /* making the feedback text easier to notice */
+  margin-top: 12px;
+  /* adding space above the feedback */
+  padding: 7px 10px;
+  /* adding space inside the feedback */
+  border-radius: 5px;
+  /* slightly rounding the feedback corners */
+}
+
+/* Correct feedback */
+.feedback.correct {
+  color: #15803D;
+  background-color: #DCFCE7;
+  /* light green background */
+}
+
+/* Incorrect feedback */
+.feedback.incorrect {
+  color: #B91C1C;
+  background-color: #FEE2E2;
+  /* light red background */
+}
+
+/* Not answered feedback */
+.feedback.not-answered {
+  color: #9A6700;
+  background-color: #FEF3C7;
+  /* light yellow background */
 }

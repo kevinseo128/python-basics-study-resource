@@ -9,7 +9,6 @@
 </head>
 
 <body id="top">
-
   <!-- Header -->
   <div class="header">
     <a href="index.html" class="logo">
@@ -22,7 +21,7 @@
       <a href="index.html">Home</a>
       <a href="start.html">Getting Started</a>
       <a href="ifelse.html">If/Else</a>
-      <a href="loops.html">Loops</a>
+      <a href="loops.html" class="active">Loops</a>
       <a href="quiz.html">Quiz</a>
     </div>
   </div>
@@ -38,22 +37,17 @@
 
     <div class="lesson">
       <h2>1. For Loop</h2>
-
       <p>
         A for loop repeats code a set number of times.
       </p>
-
       <h3>Code Example</h3>
-
       <div class="code-box">
         <code>
           for number in range(5):<br>
           &nbsp;&nbsp;print(number)
         </code>
       </div>
-
       <h3>Output</h3>
-
       <div class="output-box">
         0<br>
         1<br>
@@ -61,20 +55,14 @@
         3<br>
         4
       </div>
-
-
     </div>
-
 
     <div class="lesson">
       <h2>2. While Loop</h2>
-
       <p>
         A while loop repeats code while a condition is true.
       </p>
-
       <h3>Code Example</h3>
-
       <div class="code-box">
         <code>
           number = 1<br><br>
@@ -83,20 +71,25 @@
           &nbsp;&nbsp;number = number + 1
         </code>
       </div>
-
       <h3>Output</h3>
-
       <div class="output-box">
         1<br>
         2<br>
         3
       </div>
-
       <div class="tip">
         <strong>Tip:</strong> Make sure the condition can become false so the loop can stop.
       </div>
     </div>
 
+    <!-- Lesson completion -->
+    <div class="complete-area">
+      <p>Finished this lesson?</p>
+      <!-- button for marking the lesson as complete -->
+      <button type="button" class="complete-btn" id="loopsComplete">
+        Mark as Complete
+      </button>
+    </div>
 
     <div class="page-navigation">
       <a href="ifelse.html" class="page-btn">← Previous</a>
@@ -105,26 +98,80 @@
 
   </div>
 
-
   <!-- Footer -->
   <div class="footer">
     <p><strong>PYTHON BASICS</strong></p>
     <p><strong>by: Kevin Seo</strong></p>
-
     <p><strong>Citations / Licences:</strong></p>
-    <p>Rangitoto College - Python Cheatsheet</p>
+
+    <p>
+      Title: Python Cheatsheet<br>
+      Organisation: Rangitoto College<br>
+      Used for: Learning and checking basic Python concepts<br>
+      Source: School course material used for educational reference
+    </p>
+
+    <p>
+      Title: Window localStorage<br>
+      Website: W3Schools<br>
+      Used for: Saving and restoring the completed lesson status<br>
+      Copyright: W3Schools - used for educational reference<br>
+      Link: https://www.w3schools.com/jsref/prop_win_localstorage.asp
+    </p>
+
+    <p>
+      Title: JavaScript getElementById()<br>
+      Website: W3Schools<br>
+      Used for: Finding the Mark as Complete button by its id<br>
+      Copyright: W3Schools - used for educational reference<br>
+      Link: https://www.w3schools.com/jsref/met_document_getelementbyid.asp
+    </p>
+
+    <p>
+      Title: addEventListener()<br>
+      Website: MDN Web Docs<br>
+      Used for: Running code when the Mark as Complete button is clicked<br>
+      Licence: CC BY-SA 2.5 or later<br>
+      Link: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+    </p>
+
+    <p>
+      Title: textContent<br>
+      Website: W3Schools<br>
+      Used for: Changing Mark as Complete to Completed<br>
+      Copyright: W3Schools - used for educational reference<br>
+      Link: https://www.w3schools.com/jsref/prop_node_textcontent.asp
+    </p>
+
+    <p>
+      Title: DOMTokenList add()<br>
+      Website: MDN Web Docs<br>
+      Used for: Adding the completed CSS class to the button<br>
+      Licence: CC BY-SA 2.5 or later<br>
+      Link: https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/add
+    </p>
+
+    <p>
+      Title: Learn the JavaScript classList property easy!<br>
+      Channel: Bro Code<br>
+      Used for: Learning how to add a CSS class with JavaScript<br>
+      Link: https://www.youtube.com/watch?v=62qN2RcpIAE
+    </p>
 
     <p>
       Title: Inter<br>
       Website: Google Fonts<br>
       Used for: The main font on the website<br>
+      Licence: SIL Open Font License 1.1 (OFL-1.1)<br>
       Link: https://fonts.google.com/specimen/Inter
     </p>
 
     <p>
+      <strong>Image 1</strong><br>
       Title: Python Logo<br>
       Organisation: Python Software Foundation<br>
-      Used for: The Python logo in the website header<br>
+      Used for: Header logo<br>
+      Usage Rights: Python Software Foundation Trademark Usage Policy<br>
       Link: https://www.python.org/community/logos/
     </p>
 
@@ -136,6 +183,7 @@
     </p>
   </div>
 
+  <!-- linking the shared JavaScript file -->
+  <script src="main.js"></script>
 </body>
-
 </html>
